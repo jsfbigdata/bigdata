@@ -12,6 +12,7 @@ public class SortArray {
         return  rawSort;
     }
     public static void getSortpartition(int[] input,int left,int right){
+        //注意这里left和right都传
         //迭代直到两个碰撞到一块儿
        if(left<right){
           int pos =  randomPartition(input,left,right);

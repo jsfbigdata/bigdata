@@ -1,6 +1,7 @@
 package codetop;
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        //先初始化，然后赋值
         ListNode pre = new ListNode(0);
         ListNode cur = pre;
         int carry = 0;

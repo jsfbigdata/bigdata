@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class PathSum {
+    //路径和的问题
     List<List<Integer>> ret = new LinkedList<List<Integer>>();
     Deque<Integer> path = new LinkedList<Integer>();
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
@@ -17,6 +18,7 @@ public class PathSum {
         //先把结果写入队列中
         //记住要把这个先写入队列中
         //把value填入到队列中
+        //path去offer这个结果
         path.offerLast(root.val);
         targetSum -= root.val;
         //左右都为空，target变为0

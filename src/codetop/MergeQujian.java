@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class MergeQujian {
+public class  MergeQujian {
     public int[][] merge(int[][] intervals) {
         // 先按照区间起始位置排序
         Arrays.sort(intervals, (v1, v2) -> v1[0] - v2[0]);

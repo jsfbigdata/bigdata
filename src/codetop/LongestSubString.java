@@ -13,6 +13,7 @@ public class LongestSubString {
                 if (c1 == c2) {
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
+                    //注意这里是两个中取最大
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                 }
             }

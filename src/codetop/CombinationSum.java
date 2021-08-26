@@ -25,7 +25,7 @@ public class CombinationSum {
         for(int i = start; i < candidates.length; i++){
             if(candidates[i] > remains)
                 return;
-            //注意重复的话就直接往下遍历
+            //注意重复的话就直接往下遍历，注意candidates的盘空处理
             if(i > 0 && candidates[i] == candidates[i-1])   continue;
             //[2,2,3,5]
 

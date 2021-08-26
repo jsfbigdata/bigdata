@@ -18,6 +18,7 @@ public class GenerateParenthesis {
             }
             //不满足条件时，往里面添
          //添左边的括号
+        //注意这里没有for循环
             if(open<n){
                 //现添加
                 sb.append("(");

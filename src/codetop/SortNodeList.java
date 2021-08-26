@@ -23,6 +23,7 @@ public class SortNodeList {
                 ListNode temp = new ListNode(0);
                 q.next = temp;
             }
+            //q=q.next在下面
             q = q.next;
         }
         return resHead;

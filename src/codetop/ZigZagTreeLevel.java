@@ -9,10 +9,12 @@ public class ZigZagTreeLevel {
         List<List<Integer>> result = new LinkedList<>();
         Queue<TreeNode> nodeQueue = new LinkedList<>();
         nodeQueue.offer(root);
+        //初始值为true
         boolean isLeftOrder = true;
         while (nodeQueue != null) {
+
             int size = nodeQueue.size();
-            //双端队列
+            //双端队列，这里是offer的integer数据不是node
             Deque<Integer> list = new LinkedList<>();
             for (int i = 0; i < size; i++) {
                 //
@@ -20,6 +22,7 @@ public class ZigZagTreeLevel {
                 if (isLeftOrder) {
                     list.offerLast(node.val);
                 }
+                //记住这里是offerFirst
                 if (!isLeftOrder) {
                     list.offerFirst(node.val);
                 }

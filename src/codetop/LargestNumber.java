@@ -13,12 +13,15 @@ public class LargestNumber {
                 return sb.compareTo(sa);
             });
 
+            //s.charAt(k) ='0'
+
             StringBuilder sb = new StringBuilder();
             for (String s : ss) sb.append(s);
             int len = sb.length();
             //遇到0则加一
             int k = 0;
             while (k < len - 1 && sb.charAt(k) == '0') k++;
+            //注意这里sb做截取
             return sb.substring(k);
         }
     }

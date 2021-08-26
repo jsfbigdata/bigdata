@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MergeArray {
+
+    //初始化
+    //cur复制
+    /
     public void mergeArray(int[] nums1,int m,int[] nums2,int n){
         //注意这里要加p1和p2
         int p1 = 0, p2 = 0;

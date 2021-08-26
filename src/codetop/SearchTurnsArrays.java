@@ -26,6 +26,7 @@ public class SearchTurnsArrays {
                 }
             } else {
                 //target大于中间值，小于最大值
+                //注意还要再判断一下
                 if (nums[mid] < target && target <= nums[n - 1]) {
                     l = mid + 1;
                 } else {

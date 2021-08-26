@@ -14,6 +14,7 @@ public class DeleteKListNode {
         ListNode ans = dummy.next;
         return ans;
     }
+    //注意这里需要获取链表长度
     public int getLength(ListNode head) {
         int length = 0;
         while (head != null) {

@@ -28,6 +28,7 @@ public class LongenstConsecutive {
                 currentStreak += 1;
             }
 
+            //记住最后要取最大值
             longestStreak = Math.max(longestStreak, currentStreak);
         }
     }

@@ -15,6 +15,7 @@ public class ThreeNumberSum {
             if(nums[i] > 0) break; // 如果当前数字大于0，则三数之和一定大于0，所以结束循环
             //（2）去重判断
             if(i > 0 && nums[i] == nums[i-1]) continue; // 去重
+            //注意这里初始化的i+1和len-1
             int L = i+1;
             int R = len-1;
             while(L < R){

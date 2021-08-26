@@ -20,6 +20,7 @@ public class IsValid {
                 if (stack.isEmpty() || stack.peek() != stack.get(currentChar)) {
                     return false;
                 }
+                //记住pop是在外面
                 stack.pop();
             }
             else {

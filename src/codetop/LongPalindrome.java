@@ -2,6 +2,7 @@ package codetop;
 
 public class LongPalindrome {
     public String longPalindrome(String s) {
+        //注意这里是用的两个
         if (s == null || s.length() < 2) {
             return s;
         }
@@ -17,6 +18,7 @@ public class LongPalindrome {
                 //注意这里是dp
                 if (s.charAt(i) == s.charAt(j) || i - j <= 2 || dp[j + 1][i - 1]) {
                     dp[j][i] = true;
+                    //如果是最大长度
                     if (i - j + 1 > maxLen) {
                         maxStart = j;
                         maxEnd = i;

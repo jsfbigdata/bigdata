@@ -4,7 +4,8 @@ public class DeleteDuplicate {
         if (head == null) {
             return head;
         }
-        ListNode dummy = new ListNode(0, head);
+        //初始化一个dummy node
+        ListNode dummy = new ListNode(0);
         ListNode cur = dummy;
         while (cur.next != null && cur.next.next != null) {
             //判断出值相等

@@ -1,0 +1,30 @@
+package codetop;
+
+public class MaxZhengfangxiang {
+    public int maximalSquare(char[][] matrix) {
+        int maxSide = 0;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return maxSide;
+        }
+        int rows = matrix.length, columns = matrix[0].length;
+        int[][] dp = new int[rows][columns];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                //i,j='1'
+                if (matrix[i][j] == '1') {
+                    if (i == 0 || j == 0) {
+                        //matrix[i][j]='1'做初始化
+                        dp[i][j] = 1;
+                    } else {
+                        dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
+                    }
+                    //注意最后要取最大值
+                    maxSide = Math.max(maxSide, dp[i][j]);
+                }
+            }
+        }
+        //获取最大的maxSide，然后进行面积的计算
+        int maxSquare = maxSide * maxSide;
+        return maxSquare;
+    }
+}

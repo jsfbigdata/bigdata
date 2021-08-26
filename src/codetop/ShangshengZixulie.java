@@ -12,6 +12,7 @@ public class ShangshengZixulie {
             dp[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j]) {
+                    //注意这里是dp[j]+1
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
             }

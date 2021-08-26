@@ -3,7 +3,7 @@ package codetop;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class HasPathSum {
+public class  HasPathSum {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) {
             return false;
@@ -12,6 +12,7 @@ public class HasPathSum {
         Queue<Integer> queVal = new LinkedList<Integer>();
         queNode.offer(root);
         queVal.offer(root.val);
+        //注意这里是单次的循环
         while (!queNode.isEmpty()) {
             TreeNode now = queNode.poll();
             //在这里把结果pop出来

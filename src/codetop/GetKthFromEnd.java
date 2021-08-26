@@ -6,6 +6,7 @@ public class GetKthFromEnd {
         ListNode former = head, latter = head;
         for(int i = 0; i < k; i++)
             former = former.next;
+        //注意这里是former
         while(former != null) {
             former = former.next;
             latter = latter.next;

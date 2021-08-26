@@ -2,6 +2,8 @@ package codetop;
 
 public class AddString {
     public String addString(String num1,String num2){
+        //拿到长度
+        //
         int i = num1.length()-1;
         int j = num2.length()-1;
         int add = 0;
@@ -16,6 +18,7 @@ public class AddString {
             i--;
             j--;
         }
+        //记得reverse
         sb.reverse();
         return  sb.toString();
 //        int i = num1.length() - 1, j = num2.length() - 1, add = 0;

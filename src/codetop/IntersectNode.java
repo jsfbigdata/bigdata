@@ -8,6 +8,7 @@ public class IntersectNode {
             return null;
         }
         //双节点不为空
+        //注意这里是两个不相同
         while(firstNode!=sencondNode){
           firstNode = firstNode==null?headB:firstNode.next;
           sencondNode   = sencondNode==null?headA:sencondNode.next;

@@ -19,7 +19,7 @@ public class ComplateTree {
             //（3）cur为空时，continue
             if(cur == null){
                 reachedEnd = true;
-                //
+                //注意这里要continue
                 continue;
             }
             q.offer(cur.left);

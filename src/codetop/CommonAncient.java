@@ -6,6 +6,7 @@ public class CommonAncient {
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
         //左为空则返回右
+        //注意这里是==null而不是!=null
         if (left == null) return right;
         if (right == null) return left;
         return root;
