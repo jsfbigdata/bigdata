@@ -1,5 +1,4 @@
 package codetop;
-
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -24,6 +23,7 @@ public class TaoWa {
         });
 
         int[] f = new int[n];
+        //记住这里要初始化为1
         Arrays.fill(f, 1);
         int ans = 1;
         for (int i = 1; i < n; ++i) {

@@ -23,7 +23,7 @@ public class SimplePath {
                 queue.offer(s);
             }
         }
-        // 拼接
+        // 拼接poll出来，append /进去
         StringBuilder sb = new StringBuilder("/");
         while(!queue.isEmpty()){
             sb.append(queue.poll());
